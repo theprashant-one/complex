@@ -11,7 +11,7 @@ const sub = redisClient.duplicate();
 
 function fibb(index) {
   if (index < 2) return 1;
-  return fibb(index - 1) + fib(index - 2);
+  return fibb(index - 1) + fibb(index - 2);
 }
 
 sub.on("message", (channel, message) => {

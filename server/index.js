@@ -18,17 +18,17 @@ const pgClient = new Pool({
   port: keys.pgPort,
 });
 
-// pgClient.on("connect", () => {
-//   pgClient
-//     .query("CREATE TABLE IF NOT EXISTS values (number INT)")
-//     .catch((err) => console.log(err));
-// });
-
-pgClient.on("connect", (client) => {
-  client
+pgClient.on("connect", () => {
+  pgClient
     .query("CREATE TABLE IF NOT EXISTS values (number INT)")
-    .catch((err) => console.error(err));
+    .catch((err) => console.log(err));
 });
+
+// pgClient.on("connect", (client) => {
+//   client
+//     .query("CREATE TABLE IF NOT EXISTS values (number INT)")
+//     .catch((err) => console.error(err));
+// });
 
 // Redis Client Setup
 const redis = require("redis");
@@ -47,7 +47,6 @@ app.get("/", (req, res) => {
 
 app.get("/values/all", async (req, res) => {
   const values = await pgClient.query("SELECT * from values");
-  console.log(values);
   res.send(values.rows);
 });
 
