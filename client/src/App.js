@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { OtherPage } from "./OtherPage";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Fib from "./Fib";
 
 function App() {
@@ -9,12 +8,11 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <Link to="/">Fibnnoci Calculator</Link>
+          <h2>Fibnnoci Calculator</h2>
+          <div>
+            <Route exact path="/" component={Fib} />
+          </div>
         </header>
-        <div>
-          <Route exact path="/" component={Fib} />
-          <Route path="/otherpage" component={OtherPage} />
-        </div>
       </div>
     </Router>
   );

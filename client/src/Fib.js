@@ -32,6 +32,7 @@ class Fib extends Component {
       index: this.state.index,
     });
     this.setState({ index: "" });
+    this.fetchIndexes();
   };
 
   renderSeenIndexes() {
@@ -56,12 +57,21 @@ class Fib extends Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <label>Enter your index:</label>
+          <label style={{ display: "block" }}>Enter your index:</label>
           <input
             value={this.state.index}
             onChange={(event) => this.setState({ index: event.target.value })}
+            style={{ fontSize: "1.2rem", borderRadius: "0.5rem" }}
           />
-          <button>Submit</button>
+          <button
+            style={{
+              marginLeft: "1rem",
+              fontSize: "1.2rem",
+              borderRadius: "0.5rem",
+            }}
+          >
+            Submit
+          </button>
         </form>
 
         <h3>Indexes I have seen:</h3>
