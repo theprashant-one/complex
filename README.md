@@ -25,20 +25,20 @@ This app shows, how all those tech combined to build a solid production grade ap
 
 #### Architecture
 
-![alt text for screen readers](/diagram/arch.png).
+![alt text for screen readers](/diagram/arch.png)
 
 #### App Flow
 
-![alt text for screen readers](/diagram/user-flow.png).
+![alt text for screen readers](/diagram/user-flow.png)
 
 #### Overapp Flow
 
-![alt text for screen readers](/diagram/flow.png).
+![alt text for screen readers](/diagram/flow.png)
 
 #### Travis Flow
 
-![alt text for screen readers](/diagram/travis-flow.png).
+![alt text for screen readers](/diagram/travis-flow.png)
 
 ## Code Struture:
 
-![alt text for screen readers](/diagram/code.png "Code Struture").
+![alt text for screen readers](/diagram/code.png "Code Struture")
