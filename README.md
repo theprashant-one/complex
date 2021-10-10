@@ -21,11 +21,17 @@ This app shows, how all those tech combined to build a solid production grade ap
     5. Docker (Multi-Container)
     6. Travis for CI/CD
 
-## Architecture Diagram:
+## Diagrams:
+
+#### Architecture
 
 ![alt text for screen readers](/diagram/arch.png).
 
 #### App Flow
+
+![alt text for screen readers](/diagram/user-flow.png).
+
+#### Overapp Flow
 
 ![alt text for screen readers](/diagram/flow.png).
 
