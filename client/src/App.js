@@ -8,7 +8,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <h2>Fibnnoci Calculator</h2>
+          <h2>Fibonacci Calculator</h2>
           <div>
             <Route exact path="/" component={Fib} />
           </div>
