@@ -10,16 +10,17 @@ This app shows, how all those tech combined to build a solid production grade ap
 
 #### Frontend:
 
-    React
+1. [React](https://reactjs.org/)
 
 #### Backend:
 
-    1. Nodejs
-    2. AWS
-    3. Redis as a cache
-    4. Nginx as a web server
-    5. Docker (Multi-Container)
-    6. Travis for CI/CD
+1. [Nodejs](https://nodejs.org/en/)
+2. [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/)
+3. [AWS Relation Datbase Service](https://aws.amazon.com/rds/)
+4. [AWS Elasticache](https://aws.amazon.com/elasticache/)
+5. [Nginx](https://www.nginx.com/)
+6. [Docker (Multi-Container)](https://www.docker.com/)
+7. [Travis for CI/CD](https://www.travis-ci.com/)
 
 ## Diagrams:
 
